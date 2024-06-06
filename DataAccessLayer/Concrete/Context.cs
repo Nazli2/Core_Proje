@@ -8,7 +8,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=77.245.159.27\\MSSQLSERVER2019; database=CoreProjeDB1; user=user1; password=Mk12131415Na*");
+            optionsBuilder.UseSqlServer("server=DESKTOP-B2CLBK8\\SQLEXPRESS; database=CoreProjeDB; integrated security=true;");
         }
 
         public DbSet<About> Abouts { get; set; }
